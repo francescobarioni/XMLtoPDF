@@ -28,8 +28,12 @@ public class XmlToPdfConverter {
         java.util.logging.Logger.getLogger("com.itextpdf").setLevel(java.util.logging.Level.OFF);
 
         // Definisci il percorso del file XML e del file XSL
-        String xmlFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/Petroncini.xml";
-        String xslFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/FoglioStileAssoSoftware.xsl";
+        
+        //String xmlFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/Petroncini.xml";
+        //String xslFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/FoglioStileAssoSoftware.xsl";
+
+        String xmlFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/esempio.xml";
+        String xslFilePath = "C:/WorkSpace/Java/XMLtoPDF/input/esempio.xsl";
         String outputHtmlFilePath = "C:/WorkSpace/Java/XMLtoPDF/output/output.html";
         String outputPdfFilePath = "C:/WorkSpace/Java/XMLtoPDF/output/output.pdf";
 
