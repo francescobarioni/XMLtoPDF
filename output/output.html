@@ -1,0 +1,3301 @@
+<html xmlns:b="http://www.fatturapa.gov.it/sdi/fatturapa/v1.1" xmlns:a="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:d="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0" xmlns:c="http://www.fatturapa.gov.it/sdi/fatturapa/v1.0">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style type="text/css">          #fattura-elettronica          {          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;          margin-left: auto;          margin-right: auto;          max-width: 1280px;          min-width: 800px;          padding: 0;  }          #fattura-elettronica          div.page {          }          .tbHeader          {          width: 800px;          border: 2px solid black;          }          tr td {vertical-align: top;}          .tdHead {          width: 50%;          height: 91px;          border: 1px solid black;          }          .tableHead          {          font-size:small;			          width: 100%;          }          .headBorder          {                    }          .headerLabel          {          color:#282828;          font-weight:bold;          }          .headContent          {          margin-left:10px;          margin-bottom:0px          }          .mt5          {          margin-top:5px          }          tr.break { page-break-after: always; }          .ulAllegati          {          margin-top:0px;          }          .separa          {          height:20px;          }          table.tbTitolo          {          width: 800px;          table-layout: fixed;          border-collapse: collapse;          word-wrap:normal;           }          table.tbTitolo th {          padding-left: 5px;          padding-right: 5px;          border: solid 1px #000000;          border-bottom: none;          background-color: LightCyan;          font-size:x-small;          text-align: center;					          }          table.tbFoglio          {          width: 800px;          table-layout: fixed;          border-collapse: collapse;          word-wrap:break-word;		  border: solid 1px #000000;					  -fs-table-paginate: paginate;			          }		            table.tbFoglio th {          padding-left: 5px;          padding-right: 5px;          border: solid 1px #000000;          background-color: LightGrey;                    font-size:x-small;          }          table.tbFoglio tbody          {          border: solid 1px #000000;          }          table.tbFoglio th .perc          {          width:50px;          }          table.tbFoglio td {          font-size:small;          border-right: solid 1px #000000;          border-bottom: none;          border-left: solid 1px #000000;          }          table.tbFoglio tr {          }          .textRight          {          text-align:right;          }          .textCenter          {          text-align:center;          }          .textPerc          {          width:50px;          }          td.Ritenuta          {          width:50px;          text-align:center;          }          th.title, .title td {          width:48%          }          th.perc {          width:50px;          }          th.perc2 {          width:40px;          }          th.data {          width:80px;          }          th.import          {          width:100px;          }          td.import          {          text-align:right;          }          th.import2          {          width:80px;          }          td.import2          {          text-align:right;          }          th.ximport          {          width:100px;          }          td.ximport          {          text-align:center;          }          th.ximport2          {          width:80px;          }          td.ximport2          {          text-align:center;          }          td.data          {          text-align:center;          }          .tx-xsmall {          font-size:x-small;          }          .tx-small {          font-size:small;          }          .import          {          text-align:right;          }		  table.tbNoBorder          {			  border-collapse: collapse;						  margin-bottom: 5px;			  			  font-size:small;			  text-align:center;			  width:800px;          }				@page{																		    @bottom-left {                 		        content: element(footer);  		        vertical-align: top;		        padding-top: 5px;		    }				    @top-right {		        content: element(header); 		        vertical-align: bottom;		        padding-bottom: 5px;		    }				    size: A4 portrait;		    margin-top:1.4cm; 		    margin-left:1.2cm; 		    margin-right:0.8cm; 		    margin-bottom:1.4cm; 		}				div.header {		    display: block;		    font-weight: bold;                   		    position: running(header);		}				div.footer {		    margin-top: 0.3cm;		    display: block;		    position: running(footer);		}				div.content {		    display: block;		    width: 15.4cm; 		    text-align: justify;		}				#pagenumber:before {		    content: counter(page);		}				#pagecount:before {		    content: counter(pages);		}		        </style>
+ </head>
+ <body>
+  <div class="header"></div>
+  <div id="fattura-container" class="content">
+   <div id="fattura-elettronica" class="page">
+    <table id="tbHeader" class="tbHeader">
+     <tbody>
+      <tr>
+       <td class="tdHead">
+        <table class="tableHead">
+         <tbody>
+          <tr>
+           <td>
+            <div class="headBorder"><label class="headerLabel">Cedente/prestatore (fornitore) </label>
+             <div class="headContent mt5">
+              Identificativo fiscale ai fini IVA: <span>IT01745560209</span>
+             </div>
+             <div class="headContent">
+              Codice fiscale: <span>01745560209</span>
+             </div>
+             <div class="headContent">
+              Denominazione: <span>EUROTUBI SRL</span>
+             </div>
+             <div class="headContent"></div>
+             <div class="headContent">
+              Regime fiscale: <span>RF01</span> ordinario
+             </div>
+             <div class="headContent">
+              Indirizzo: <span>VIA BASSA, 27 </span>
+             </div>
+             <div class="headContent"><span> Comune: <span>BORGOCARBONARA</span> Provincia: <span>MN</span></span>
+             </div>
+             <div class="headContent"><span> Cap: <span>46020</span> Nazione: <span>IT</span></span>
+             </div>
+             <div class="headContent">
+              Telefono: <span>038641997</span>
+             </div>
+             <div class="headContent">
+              Email: <span>info@eurotubi.it</span>
+             </div>
+             <div class="headContent"></div><br><label class="headerLabel">Terzo Intermediario </label>
+             <div class="headContent mt5">
+              Identificativo fiscale ai fini IVA: <span>IT02355260981</span>
+             </div>
+             <div class="headContent">
+              Codice fiscale: <span>02355260981</span>
+             </div>
+             <div class="headContent">
+              Denominazione: <span>ABLE TECH S.R.L.</span>
+             </div>
+             <div class="headContent"></div>
+            </div></td>
+          </tr>
+         </tbody>
+        </table></td>
+       <td class="tdHead">
+        <table class="tableHead">
+         <tbody>
+          <tr>
+           <td>
+            <div class="headBorder"><label class="headerLabel">Cessionario/committente (cliente) </label>
+             <div class="headContent mt5">
+              Identificativo fiscale ai fini IVA: <span>IT02193410368</span>
+             </div>
+             <div class="headContent">
+              Codice fiscale: <span>02193410368</span>
+             </div>
+             <div class="headContent">
+              Denominazione: <span>PETRONCINI IMPIANTI SPA</span>
+             </div>
+             <div class="headContent"></div>
+             <div class="headContent">
+              Indirizzo: <span>VIALE VITTORIO VENETO 2 </span>
+             </div>
+             <div class="headContent"><span> Comune: <span>MODENA</span> Provincia: <span>MO</span></span>
+             </div>
+             <div class="headContent"><span> Cap: <span>41124</span> Nazione: <span>IT</span></span>
+             </div>
+             <div class="headContent"></div>
+            </div></td>
+          </tr>
+         </tbody>
+        </table></td>
+      </tr>
+     </tbody>
+    </table>
+    <div style="height:10px"></div>
+    <table class="tbFoglio">
+     <thead>
+      <tr>
+       <th scope="col">Tipologia documento</th>
+       <th class="perc" scope="col">Art. 73</th>
+       <th scope="col">Numero documento</th>
+       <th class="data" scope="col">Data documento</th>
+       <th scope="col">Codice destinatario</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>TD25 fattura differita di cui all'art.21, comma 4, terzo periodo lett. b) DPR 633/72</td>
+       <td class="ritenuta"></td>
+       <td class="textCenter">2023/V1/00406</td>
+       <td class="data">31-01-2023</td>
+       <td class="textCenter">MZO2A0U</td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="separa"></div>
+    <table class="tbFoglio">
+     <thead>
+      <tr>
+       <th scope="col">Causale</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>FATTURA ITALIA - CONTRIBUTO CONAI ASSOLTO OVE DOVUTO <br></td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="separa"></div>
+    <table class="tbFoglio">
+     <thead>
+      <tr>
+       <th width="80px" scope="col">Cod. articolo</th>
+       <th scope="col">Descrizione</th>
+       <th class="import2" scope="col">Quantità</th>
+       <th class="import2" scope="col">Prezzo unitario</th>
+       <th class="perc2" scope="col">UM</th>
+       <th class="perc" scope="col">Sconto o magg.</th>
+       <th class="perc2" scope="col">%IVA</th>
+       <th class="ximport" scope="col">Prezzo totale</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000048 del 16-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202605 del 10-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         5852400345 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D400, 2, coat, pnRo24V Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 240
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">828,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         1.377,03
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000049 del 16-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202581 del 09-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12501020 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D500, 1000L, 2, coat Country of origin : DE Preferential origin Commodity code : 73053100 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003561 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 09-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">121,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         411,51
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12502383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D500 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003561 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 09-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">28,10</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         93,41
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1050795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D500, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003561 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 09-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">7,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         25,26
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11501339 (Codice Art. fornitore)
+        </div></td>
+       <td>Seg-Bend D500, 90, R1D, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003561 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 09-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">259,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         439,45
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000104 del 17-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202625 del 11-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         8000778 (Codice Art. fornitore)
+        </div>
+        <div class="tx-xsmall">
+         392006080 (Codice Art. cliente)
+        </div></td>
+       <td>Throttle-valve without seal, D=800, 2 mm thick 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003608 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">1.321,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         1.097,97
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000130 del 17-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202765 del 23-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11003792 (Codice Art. fornitore)
+        </div></td>
+       <td>Earthing bridge (pack of ten), w/o caps Country of origin : DE Preferential origin Commodity code : 73269098 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">36,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         29,65
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12401010 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D400, 2000L, 2, coat Country of origin : DE Preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">158,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         133,78
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12401030 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D400, 500L, 2, coat Country of origin : DE Preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">43,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         36,83
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12401040 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D400, 200L, 2, coat Country of origin : DE Preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">25,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         21,34
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253010 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D250, 2000L, 1, V2A Country of origin : DE Preferential origin Commodity code : 73064020 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">169,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         136,15
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12253020 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D250, 1000L, 2, V2A Country of origin : DE Preferential origin Commodity code : 73064020 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 60
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">170,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         137,35
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12402383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D400 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 70
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">19,70</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         163,71
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1040795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D400, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 80
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">20,00</td>
+       <td class="import">6,10</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         101,39
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253330 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D250, 45, 1,5, V2A Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 90
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">56,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         45,52
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11401339 (Codice Art. fornitore)
+        </div></td>
+       <td>Seg-Bend D400, 90, R1D, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 100
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">207,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         175,27
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11401560 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D400, 2, coat, man Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003728 Riga 110
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 24-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">194,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         164,26
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000131 del 17-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2201163 del 11-05-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         800012453 (Codice Art. fornitore)
+        </div></td>
+       <td>2WV co asym D150. 60. 2. V2A. Country of origin : DE No preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0001927 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 25-05-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">31,00</td>
+       <td class="import">2.656,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         66.329,88
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000132 del 17-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11353020 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D350, 1000L, 1, V2A Country of origin : DE Preferential origin Commodity code : 73064020 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">130,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         210,26
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11003792 (Codice Art. fornitore)
+        </div></td>
+       <td>Earthing bridge (pack of ten), w/o caps Country of origin : DE Preferential origin Commodity code : 73269098 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">5,00</td>
+       <td class="import">36,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         148,23
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11451030 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D450, 500L, 1, coat Country of origin : DE Preferential origin Commodity code : 73053100 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">6,00</td>
+       <td class="import">34,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         175,27
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12201020 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D200, 1000L, 2, coat Country of origin : DE No preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">3,00</td>
+       <td class="import">36,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         91,95
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12401030 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D400, 500L, 2, coat Country of origin : DE Preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">43,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         73,66
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12201040 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D200, 200L, 2, coat Country of origin : DE No preferential origin Commodity code : 73063080 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 60
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">13,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         11,18
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12202383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D200 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 70
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">11,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         93,08
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12402383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D400 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 80
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">19,70</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         163,71
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12452383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D450 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 90
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">20,00</td>
+       <td class="import">23,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         395,58
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12502383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D500 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 100
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">28,10</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         233,52
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11151349 (Codice Art. fornitore)
+        </div></td>
+       <td>Bend D150, 90, R2D, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 110
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">53,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         91,11
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11451339 (Codice Art. fornitore)
+        </div></td>
+       <td>Seg-Bend D450, 90, R1D, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 120
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">221,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         750,19
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1015795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D150, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 130
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">3,40</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         28,26
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11001485 (Codice Art. fornitore)
+        </div></td>
+       <td>Cone piece D400/450, 200L, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 140
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">64,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         109,73
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12451432 (Codice Art. fornitore)
+        </div></td>
+       <td>Connecting flange D450, 2, coat, LF Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 150
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">8,00</td>
+       <td class="import">46,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         312,95
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11451240 (Codice Art. fornitore)
+        </div></td>
+       <td>T-piece D450, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 160
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">183,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         309,90
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1045795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D450, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 170
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">25,00</td>
+       <td class="import">7,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         149,59
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1050795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D500, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 180
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">7,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         63,16
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11201310 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D200, 15, 1, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 190
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">11,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         9,31
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11201320 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D200, 30, 1, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 200
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">12,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         10,33
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11201330 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D200, 45, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 210
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">14,90</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         12,62
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11401560 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D400, 2, coat, man Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 220
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">194,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         328,53
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         22451560 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D450, 2, coat, LF, man Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003611 Riga 230
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">501,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         848,41
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000247 del 19-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202957 del 20-12-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11003793 (Codice Art. fornitore)
+        </div></td>
+       <td>Earthing bridge (pack of ten) w/ caps Country of origin : DE Preferential origin Commodity code : 73269098 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">43,10</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         69,44
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12202383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D200 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">11,20</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         93,08
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11201339 (Codice Art. fornitore)
+        </div></td>
+       <td>Bend D200, 90, R1D, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">58,40</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         49,45
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12152383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D150 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">8,00</td>
+       <td class="import">8,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         57,18
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1015795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D150, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">3,40</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         28,26
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11153230 (Codice Art. fornitore)
+        </div></td>
+       <td>Fork D150, 30, 1, V2A Country of origin : DE No preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 60
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">141,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         227,98
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12153320 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D150, 30, 2, V2A Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003979 Riga 70
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 20-12-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">36,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         117,94
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000306 del 26-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202650 del 15-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12152383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D150 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">20,00</td>
+       <td class="import">8,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         142,94
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11151240 (Codice Art. fornitore)
+        </div></td>
+       <td>T-piece D150, 1,5, coat Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">52,70</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         178,49
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11001461 (Codice Art. fornitore)
+        </div></td>
+       <td>Cone piece D150/200, 100L, 1,5, coat Country of origin : DE No preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">3,00</td>
+       <td class="import">17,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         43,18
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1015795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D150, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">25,00</td>
+       <td class="import">3,40</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         70,64
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         1020795209 (Codice Art. fornitore)
+        </div></td>
+       <td>U-shaped seal D200, Si, 2 Country of origin : DE No preferential origin Commodity code : 39269097 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">3,90</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         32,41
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11151560 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D150, 1,5, coat, man Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 60
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">81,70</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +8.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         276,71
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         5852150345 (Codice Art. fornitore)
+        </div></td>
+       <td>ThrVal D150, 1,5, coat, pnRo24V Country of origin : DE Preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003654 Riga 70
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 15-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">4,00</td>
+       <td class="import">665,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         2.210,57
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000418 del 31-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202701 del 17-11-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253020 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D250, 1000L, 1, V2A Country of origin : DE Preferential origin Commodity code : 73064020 Country of origin : DE Preferential origin Commodity code : 73064020 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003683 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 17-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">6,00</td>
+       <td class="import">93,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         449,52
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12252383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D250 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003683 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 17-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">15,00</td>
+       <td class="import">11,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         147,09
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253310 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D250, 15, 1, V2A Country of origin : DE Preferential origin Commodity code : 73072980 Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003683 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 17-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">45,30</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         36,49
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253320 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D250, 30, 1, V2A Country of origin : DE Preferential origin Commodity code : 73072980 Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003683 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 17-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">45,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         36,90
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         800012352 (Codice Art. fornitore)
+        </div></td>
+       <td>2WV co D400, asy, 50, 2, V2A, WF pnRO24V Country of origin : DE No preferential origin Commodity code : 84818085 Country of origin : DE No preferential origin Commodity code : 84818085 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003683 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 17-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">3.379,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         2.722,12
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000419 del 31-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         Vs.Ord. 2202883 del 06-12-2022
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11153522 (Codice Art. fornitore)
+        </div></td>
+       <td>Adjustable blank-off cover D150, 1,5 V2A Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">2,00</td>
+       <td class="import">62,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         100,86
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12632383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D630 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 20
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">37,40</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         31,08
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253010 (Codice Art. fornitore)
+        </div></td>
+       <td>Pipe D250, 2000L, 1, V2A Country of origin : DE Preferential origin Commodity code : 73064020 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 30
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">169,00</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         136,15
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253300 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D250, 5, 1, V2A Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 40
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">40,60</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         32,71
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         12252383 (Codice Art. fornitore)
+        </div></td>
+       <td>Pull-ring without sealant D250 e-gal 1-2 Country of origin : DE Preferential origin Commodity code : 73079980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 50
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">10,00</td>
+       <td class="import">11,80</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         98,06
+        </div></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         11253330 (Codice Art. fornitore)
+        </div></td>
+       <td>Segment D250, 45, 1,5, V2A Country of origin : DE Preferential origin Commodity code : 73072980 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2023/OC/0000090 Riga 60
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-01-2023
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">56,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -5.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         45,52
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <div class="tx-xsmall">
+         DDT 2023 BJ 0000472 del 31-01-2023
+        </div></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>
+        <div class="tx-xsmall">
+         800012356 (Codice Art. fornitore)
+        </div>
+        <div class="tx-xsmall">
+         392006063 (Codice Art. cliente)
+        </div></td>
+       <td>Throttle-valve without seal, D=630, 2 mm thick 
+        <div class="tx-xsmall">
+         Tipo dato: Ns.Ord.
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: 2022/OC/0003608 Riga 10
+        </div>
+        <div class="tx-xsmall">
+         Rif. data: 11-11-2022
+        </div>
+        <div class="tx-xsmall">
+         Tipo dato: DP
+        </div>
+        <div class="tx-xsmall">
+         Rif. testo: PETRONCINI IMPIANTI SPA VIA DEL FANTINO, 2/A 44047 SANT AGOS
+        </div></td>
+       <td class="import2">1,00</td>
+       <td class="import">843,50</td>
+       <td class="textCenter">NR</td>
+       <td class="import">
+        <div>
+         -20.00%
+        </div>
+        <div>
+         -2.00%
+        </div>
+        <div>
+         +6.00%
+        </div></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         700,98
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">344,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         344,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">60,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         60,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">100,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         100,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">69,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         69,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">2.738,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         2.738,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">60,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         60,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">177,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         177,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">121,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         121,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>TRASPORTO A VALORE JACOB (AC)</td>
+       <td class="import2"></td>
+       <td class="import">60,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N3.5</td>
+       <td>
+        <div class="import">
+         60,00
+        </div></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>IMP. DI BOLLO (AC)</td>
+       <td class="import2"></td>
+       <td class="import">2,00</td>
+       <td class="textCenter"></td>
+       <td class="import"></td>
+       <td class="import">N1</td>
+       <td>
+        <div class="import">
+         2,00
+        </div></td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="separa"></div>
+    <table class="tbTitolo">
+     <thead>
+      <tr>
+       <th scope="col">RIEPILOGHI IVA E TOTALI</th>
+      </tr>
+     </thead>
+    </table>
+    <table class="tbFoglio">
+     <thead>
+      <tr>
+       <th colspan="3" scope="col">esigibilità iva / riferimenti normativi</th>
+       <th class="perc" scope="col">%IVA</th>
+       <th scope="col">Spese accessorie</th>
+       <th class="perc" scope="col">Arr.</th>
+       <th colspan="2" scope="col">Totale imponibile</th>
+       <th colspan="2" scope="col">Totale imposta</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td colspan="3"><span>I</span> (esigibilità immediata) 
+        <div class="tx-xsmall">
+         ESCLUSO ART. 15
+        </div></td>
+       <td class="import">N1</td>
+       <td class="import"></td>
+       <td class="import"></td>
+       <td colspan="2" class="import">2,00</td>
+       <td colspan="2" class="import">0</td>
+      </tr>
+      <tr>
+       <td colspan="3"><span>I</span> (esigibilità immediata) 
+        <div class="tx-xsmall">
+         N.I.ART. 8 C.1 LETT.C
+        </div></td>
+       <td class="import">N3.5</td>
+       <td class="import"></td>
+       <td class="import"></td>
+       <td colspan="2" class="import">87.405,04</td>
+       <td colspan="2" class="import">0</td>
+      </tr>
+      <tr>
+       <th colspan="2" scope="col">Importo bollo</th>
+       <th colspan="3" scope="col">Sconto/Maggiorazione</th>
+       <th class="perc" scope="col">Arr.</th>
+       <th colspan="4" scope="col">Totale documento</th>
+      </tr>
+      <tr>
+       <td colspan="2" class="import">2,00</td>
+       <td colspan="3" class="import"></td>
+       <td class="import"></td>
+       <td colspan="4" class="import">87.407,04</td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="separa"></div>
+    <table class="tbFoglio">
+     <thead>
+      <tr>
+       <th style="width:200px" scope="col">Modalità pagamento</th>
+       <th scope="col">Dettagli</th>
+       <th style="width:180px" scope="col">Scadenze</th>
+       <th class="ximport" scope="col">Importo</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td><span>MP05</span> Bonifico <span></span></td>
+       <td>IBAN IT81Q0200811510000004982853 <br>
+         ABI 02008 CAB 11510 BIC UNCRITM1M96 <br>
+         UNICREDIT SPA CENTRO CORPORATE MANTOVA <br>
+         Codice pagamento BB BONIFICO BANCARIO 60 GG DF FM</td>
+       <td>Data scadenza 31-03-2023</td>
+       <td class="import">87.407,04</td>
+      </tr>
+     </tbody>
+    </table>
+    <div style="height:10px"></div>
+   </div>
+  </div>
+ </body>
+</html>
