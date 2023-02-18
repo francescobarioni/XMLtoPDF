@@ -10,8 +10,6 @@ Sono contenute diverse cartelle importanti:
 - `input`: dove sono contenut tutti file di input (quello XML & XSL)
 - `output`: dove sono presenti i file di output (quello HTML & PDF);
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
 ## Librerie principalmente utilizzata
 
 - `com.itextpdf.text`: una libreria per la creazione di documenti PDF. In particolare, viene utilizzata la classe Document per creare un nuovo documento PDF e la classe PageSize per specificare le dimensioni del foglio.
