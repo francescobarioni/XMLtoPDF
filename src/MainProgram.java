@@ -26,14 +26,16 @@ public class MainProgram {
             HtmlModifier modifier = new HtmlModifier();
             modifier.modify(outputHtmlFilePath, outputHtmlFilePath);
 
+            // riattivo il logging della libreria com.itextpdf
+            java.util.logging.Logger.getLogger("com.itextpdf").setLevel(java.util.logging.Level.ALL);
+
             // Creazione del file PDF dal file HTML modificato
             String html = new String(Files.readAllBytes(Paths.get(outputHtmlFilePath)));
             PdfGenerator.generatePdf(html, outputPdfFilePath);
 
             System.out.println("Operazione completata con successo!");
 
-            // disattivo temporaneamente il logging della libreria com.itextpdf
-            java.util.logging.Logger.getLogger("com.itextpdf").setLevel(java.util.logging.Level.ALL);
+
 
         } catch (Exception e) {
             e.printStackTrace();
