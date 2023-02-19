@@ -97,7 +97,7 @@ public class XmlToPdfConverter {
             }
 
             // riattivo i logging della libreria com.itextpdf
-            java.util.logging.Logger.getLogger("com.itextpdf").setLevel(java.util.logging.Level.OFF);
+            java.util.logging.Logger.getLogger("com.itextpdf").setLevel(java.util.logging.Level.ALL);
 
             //--------------------------------------------------------------------------------
             // FINE UPDATE DOCUMENTO HTML
