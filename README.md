@@ -1,6 +1,6 @@
 ## Per partire
 
-- Programma di conversione da file XML a file PDF passando per un passaggio intermedio che è un file HTML
+- Programma di conversione da file `XML` a file `PDF` passando per un passaggio intermedio che è un file `HTML`
 
 ## Struttura del progetto
 Sono contenute diverse cartelle importanti:
@@ -18,7 +18,7 @@ Sono contenute diverse cartelle importanti:
 
 - `org.jsoup`: una libreria per analizzare e manipolare il contenuto HTML. In particolare, viene utilizzata la classe Jsoup per analizzare il file HTML generato dalla trasformazione XSLT e per modificare gli elementi HTML.
 
-## Operazioni svolte
+## Operazioni svolte dalle varie classi
 
 - `MainProgram`: 
     Questa classe Java è il programma principale di un'applicazione che converte un file XML in un file PDF.
